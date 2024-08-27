@@ -41,3 +41,7 @@ button {
 #reset-btn {
     background: blue;
 }
+
+li {
+    list-style: none;
+}
