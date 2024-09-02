@@ -30,7 +30,7 @@ function capturer() {
 
 function sauvegarder() {
 //    sauvegardeEl.textContent += compteur + " Pokémons - "; // version plus simple
-    sauvegardeEl.innerHTML += `<li>${compteur} Pokémons</li>`;
+    sauvegardeEl.innerHTML += `<tr><th>${compteur} Pokémons</th></tr>`;
     // Sauvegarde l'historique de mes captures en local dans le navigateur
     localStorage.setItem("captures", sauvegardeEl.innerHTML);
     compteur = 0;
