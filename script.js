@@ -16,6 +16,10 @@ const compteurEl = document.getElementById('compteur-el');
 const sauvegardeEl = document.getElementById('sauvegarde-el');
 
 // déclarations des fonctions
+
+/**
+ * Modifie l'onglet capture
+ */
 function capturer() {
     compteur += 1;
     compteurEl.textContent = compteur;
@@ -28,6 +32,9 @@ function capturer() {
     }
 }
 
+/**
+ * Sauvegarde les captures dans le local storage
+ */
 function sauvegarder() {
 //    sauvegardeEl.textContent += compteur + " Pokémons - "; // version plus simple
     sauvegardeEl.innerHTML += `<tr><th>${compteur} Pokémons</th></tr>`;
@@ -37,6 +44,9 @@ function sauvegarder() {
     compteurEl.textContent = compteur;
 }
 
+/**
+ * Reset le local storage
+ */
 function reset() {
     localStorage.clear();
     window.location.reload();
